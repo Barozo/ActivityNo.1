@@ -1,0 +1,88 @@
+body{
+    background: #b3d4fc;
+  }
+  .input-field-box{
+    position: relative;
+    margin: 15px 0px;
+  }
+.input-field-box input, .input-field-box textarea{
+  font-size:18px;
+  padding:5px 2px;
+  display:block;
+  background: transparent;
+  width:100%;
+  border:none;
+  border-bottom:1px solid #0000001f;
+}
+.input-field-box input:focus, .input-field-box textarea     { outline:none; }
+/* LABEL ======================================= */
+.input-field-box label          {
+  color:rgba(0,0,0,.5); 
+  font-size:15px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  top:10px;
+  transition:0.2s ease all; 
+}
+
+/* active state */
+.input-field-box input:focus ~ label, .input-field-box textarea:focus ~ label{
+  top:-15px;
+  font-size:12px;
+  color:rgb(13,71,161);
+}
+.input-field-box input:valid ~ label, .input-field-box textarea:valid ~ label.input-has-value{
+  top:-15px;
+  font-size:12px;
+}
+.mat-form .form-group{
+  display: inline-block;
+  width: 100%;
+  font-family: Roboto,sans-serif;
+}
+
+/* BOTTOM BARS ================================= */
+.input-field-box .bar  { position:relative; display:block; width:100%; }
+.input-field-box .bar:before, .input-field-box .bar:after   {
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:.5px; 
+  position:absolute;
+  background:rgb(13,71,161); 
+  transition:0.2s ease all; 
+}
+.input-field-box .bar:before {
+  left:50%;
+}
+.input-field-box .bar:after {
+  right:50%; 
+}
+
+/* active state */
+.input-field-box input:focus ~ .bar:before, .input-field-box input:focus ~ .bar:after, .input-field-box textarea:focus ~ .bar:before, .input-field-box textarea:focus ~ .bar:after {
+  width:50%;
+}
+.mat-btn{
+  background: #3F51B5;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+  padding: 7px 15px;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  }
+  .mat-btn:hover{
+    opacity: 1;
+    transition: .4s ease;
+    color: #fff;
+  }
+  .mat-card{
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+    transition: box-shadow 280ms cubic-bezier(.4,0,.2,1);
+    display: block;
+    padding: 24px;
+    border-radius: 5px;
+    background: #b3d4fc;
+    margin-top: 55px;
+}

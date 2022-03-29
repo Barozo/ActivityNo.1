@@ -1,0 +1,18 @@
+.landing {
+    background: url(https://images.unsplash.com/photo-1469125155630-7ed37e065743?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=c10c3b51d12f08c057a98f0337211912) no-repeat center center fixed;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    text-align: left;
+    top: 500opx;
+  }
+  h1 {
+      position: absolute;
+      top: 400px;
+    font: bold 3em 'Roboto Condensed', san-serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: #d5e9e2;
+    margin: 0 0 30px;
+  }
+  
